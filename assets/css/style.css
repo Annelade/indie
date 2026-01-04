@@ -1,0 +1,41 @@
+/* this is a comment in the style.css file */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #222;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f2f2f2;
+  margin-top: 40px;
+}
