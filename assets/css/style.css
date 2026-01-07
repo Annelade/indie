@@ -8,6 +8,7 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--neutral-light);
   margin: 0;
   padding: 0;
 }
@@ -34,8 +35,8 @@ main {
   color: var(--primary-dark);
   width: 800px;
   max-width: none;
-  margin: 20px auto;
-  padding: 0 20px;     /* Seitenabstand für Mobile */
+  margin: 20px 10px;
+  padding: 0 20px;
 }
 
 h1, h2, h3 {
@@ -43,24 +44,16 @@ h1, h2, h3 {
 }
 
 .room-section {
-  margin: 0 calc(50% - 50vw);  /* ← WICHTIG: Breakout aus main */
+  margin: 0 calc(50% - 50vw);
   width: 100vw;
   overflow: hidden;
 }
 
 .room-image {
-  width: 100%;                 /* ← 100% vom CONTAINER (100vw) */
-  height: 300px;               /* Feste Höhe */
-  object-fit: cover;
-  display: block;
-  
-  /*width: 100vw;
+  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
-  transform: translateX(-50%);
-  position: relative;
-  left: 50%;*/
 }
 
 img {
