@@ -30,11 +30,11 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 10px 0;
+  margin: 1px 0;
 }
 
 footer {
-  text-align: center;
+  /*text-align: center;*/
   padding: 15px;
   background: #f2f2f2;
   margin-top: 40px;
