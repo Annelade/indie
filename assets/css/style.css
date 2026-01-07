@@ -1,3 +1,11 @@
+:root {
+  --primary-dark: #655C48;    /* 60%: Backgrounds, Headings */
+  --secondary: #A2997D;       /* 30%: Text, Hover-States */
+  --accent-rust: #7E401C;     /* 10%: Links, Buttons, Highlights */
+  --neutral-light: #f8f6f2;   /* Text-Hintergrund */
+  --neutral-dark: #2d2a20;    /* Falls nötig */
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0;
@@ -5,33 +13,48 @@ body {
 }
 
 header {
-  background: #222;
+  background: var(--primary-dark);
+  color: var(--secondary);
   padding: 10px 20px;
 }
 
 nav a {
-  color: #fff;
+  color: var(--secondary);
   margin-right: 15px;
   text-decoration: none;
 }
 
 nav a:hover {
+  color: var(--accent-rust);
   text-decoration: underline;
 }
 
 main {
-  width: 80px;
+  background: var(--neutral-light);
+  color: var(--primary-dark);
+  width: 800px;
   max-width: none;
   margin: 20px auto;
   padding: 0 20px;     /* Seitenabstand für Mobile */
 }
 
-.hero-image {
+h1, h2, h3 {
+  color: var(--primary-dark);
+}
+
+.room-section {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;      /* Verhindert X-Scroll */
+}
+
+.room-image {
   width: 100vw;
   position: relative;
   left: 50%;
   margin-left: -50vw;
-  height: 300px;
+  height: auto;
+  display: block;
   object-fit: cover;
 }
 
@@ -42,10 +65,11 @@ img {
 }
 
 .footer {
-  background: #f2f2f2;
+  background: var(--primary-dark);
+  border-top: 3px solid var(--accent-rust);
+  color: var(--secondary);
   padding: 20px 0;
   margin-top: 40px;
-  border-top: 1px solid #ddd;
 }
 
 .footer-content {
@@ -60,6 +84,7 @@ img {
 }
 
 .copyright {
+  color: var(--secondary);
   margin: 0;
   font-size: 14px;
 }
@@ -73,13 +98,13 @@ img {
 }
 
 .footer-nav a {
-  color: #666;
+  color: var(--secondary);
   text-decoration: none;
   font-size: 14px;
   padding: 5px 0;
 }
 
 .footer-nav a:hover {
-  color: #222;
+  color: var(--neutral-light);
   text-decoration: underline;
 }
