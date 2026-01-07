@@ -43,19 +43,24 @@ h1, h2, h3 {
 }
 
 .room-section {
-  margin: 0;
-  width: 100%;
-  /* overflow: hidden;       Verhindert X-Scroll */
+  margin: 0 calc(50% - 50vw);  /* ← WICHTIG: Breakout aus main */
+  width: 100vw;
+  overflow: hidden;
 }
 
 .room-image {
-  width: 100vw;
+  width: 100%;                 /* ← 100% vom CONTAINER (100vw) */
+  height: 300px;               /* Feste Höhe */
+  object-fit: cover;
+  display: block;
+  
+  /*width: 100vw;
   height: auto;
   object-fit: cover;
   display: block;
   transform: translateX(-50%);
   position: relative;
-  left: 50%;
+  left: 50%;*/
 }
 
 img {
