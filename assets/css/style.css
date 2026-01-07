@@ -45,17 +45,17 @@ h1, h2, h3 {
 .room-section {
   margin: 0;
   width: 100%;
-  overflow: hidden;      /* Verhindert X-Scroll */
+  /* overflow: hidden;       Verhindert X-Scroll */
 }
 
 .room-image {
   width: 100vw;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transform: translateX(-50%);
   position: relative;
   left: 50%;
-  margin-left: -50vw;
-  height: auto;
-  display: block;
-  object-fit: cover;
 }
 
 img {
